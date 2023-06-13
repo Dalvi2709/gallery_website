@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  
+ 
+    <form id="contact-form" action="database_entry.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="first_name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+       
+      <label for="Phone-No">Phone-No:</label>
+      <input type="number" id="number" name="phone" required>
+      
+      <!-- <label for="message">Message:</label>
+      <input id="message" name="msg" required> -->
+      
+      <input type="submit" name="save" value="Submit">
+    </form>
+
+  
+  <!-- <script src="contact.js"></script> -->
+
+<!-- <head>
+	<title>
+		A Sample Tutorial for database connection.
+	</title>
+</head>
+<body bgcolor="#32e692">
+	<div align="center">
+		<h1>Details Entry Form</h1>
+	</div>
+<form action="database_entry.php" method="post">
+	<table border="1" align="center">
+		<tr>
+			<td>
+			<label>Enter First Name</label></td>
+			<td><input type="text" name="first_name"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>Enter Last Name</label></td>
+			<td><input type="text" name="last_name"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>Gender</label></td>
+			<td><input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="female">Female</td>
+		</tr>
+		<tr>
+			<td>
+			<label>Enter Email</label></td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td>
+			<label>Enter Phone</label></td>
+			<td><input type="phone" name="phone"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" ><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+		</tr>
+	</table>
+</form> -->
+</body>
+</html>

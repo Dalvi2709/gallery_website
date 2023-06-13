@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFLGallry</title>
+    <link rel="stylesheet" href="main.html">
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="/css/rfl.css">
+</head>
+<body>
+    <div class="galllery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="ice-cream">Ice-cream</li>
+            <li class="buttons" data-filter="chocolate">Chocolate</li>
+            <li class="buttons" data-filter="cake">Cake</li>
+            <li class="buttons" data-filter="juice">Juice</li>
+            <li class="buttons" data-filter="sandwitch">Sandwitch</li>
+        </ul>
+        <div class="image-container">
+            <a href="/img/ice1.jpeg" class="image ice-cream">
+                <img src="/img/ice1.jpeg" alt="">
+            </a>
+            <a href="/img/ice2.webp" class="image ice-cream">
+                <img src="/img/ice2.webp" alt="">
+            </a>
+            <a href="/img/ice3.jpeg" class="image ice-cream">
+                <img src="/img/ice3.jpeg" alt="">
+            </a>
+            <a href="/img/ice4.jpeg" class="image ice-cream">
+                <img src="/img/ice4.jpeg" alt="">
+            </a>
+           <!-- choclate -->
+            <a href="/img/ice1.jpeg" class="image chocolate">
+                <img src="/img/ice1.jpeg" alt="">
+            </a>
+            <a href="/img/ice2.webp" class="image chocolate">
+                <img src="/img/ice2.webp" alt="">
+            </a>
+            <a href="/img/ice3.jpeg" class="image chocolate">
+                <img src="/img/ice3.jpeg" alt="">
+            </a>
+            <a href="/img/ice4.jpeg" class="image chocolate">
+                <img src="/img/ice4.jpeg" alt="">
+            </a>
+            <!-- cake -->
+            <a href="/img/ice1.jpeg" class="image cake">
+                <img src="/img/ice1.jpeg" alt="">
+            </a>
+            <a href="/img/ice2.webp" class="image cake">
+                <img src="/img/ice2.webp" alt="">
+            </a>
+            <a href="/img/ice3.jpeg" class="image cake">
+                <img src="/img/ice3.jpeg" alt="">
+            </a>
+            <a href="/img/ice4.jpeg" class="image cake">
+                <img src="/img/ice4.jpeg" alt="">
+            </a>
+            <!-- juice -->
+            <a href="/img/ice1.jpeg" class="image juice">
+                <img src="/img/ice1.jpeg" alt="">
+            </a>
+            <a href="/img/ice2.webp" class="image juice">
+                <img src="/img/ice2.webp" alt="">
+            </a>
+            <a href="/img/ice3.jpeg" class="image juice">
+                <img src="/img/ice3.jpeg" alt="">
+            </a>
+            <a href="/img/ice4.jpeg" class="image juice">
+                <img src="/img/ice4.jpeg" alt="">
+            </a> 
+            <!-- sanwitch -->
+            <a href="/img/ice1.jpeg" class="image sandwitch">
+                <img src="/img/ice1.jpeg" alt="">
+            </a>
+            <a href="/img/ice2.webp" class="image sandwitch">
+                <img src="/img/ice2.webp" alt="">
+            </a>
+            <a href="/img/ice3.jpeg" class="image sandwitch">
+                <img src="/img/ice3.jpeg" alt="">
+            </a>
+            <a href="/img/ice4.jpeg" class="image sandwitch">
+                <img src="/img/ice4.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- magnific popup link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.buttons').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var filter = $(this).attr('data-filter')
+                if(filter == 'all'){
+                    $(' .image').show(400);
+                }else{
+                    $(' .image').not('.' +filter).hide(200);
+                    $(' .image').filter('.' +filter).show(400);
+                }
+            });
+
+            $('.galllery').magnificPopup({
+                delegate:'a',
+                type:'image',
+                gallery:{
+                    enabled: true
+                }
+
+            });
+        });
+    </script>
+</body>
+</html>

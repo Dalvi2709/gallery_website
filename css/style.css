@@ -1,0 +1,205 @@
+/* for header */
+header {
+  border-radius: 20px;
+    background-color: #9bedf0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    border-radius: 15px;
+    height: 88px;
+  }
+  
+  .search-bar input {
+    width: 288px;
+    border-radius: 17px;
+    padding: 8px;
+    border: 1px solid rgb(82, 28, 28);
+  }
+  
+  .search-bar button  {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    border-radius: 12mm;
+    height: 35px;
+    padding: 8px 12px;
+    background-color: rgb(7, 180, 74);
+    color: rgb(17, 14, 14);
+    border: whitesmoke;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    border-radius: 16px;
+    padding: 17px;
+    font-size: x-large;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    
+background-color: rgb(38, 92, 17);
+    color: #ebdddd;
+  }
+
+  /* signup and */
+   /* Common button styles */
+.button {
+  margin-top: 20px;
+  margin-left: 5px;
+  padding: 15px 20px;
+  background-color: rgb(231, 102, 26);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 19px;
+  transition: background-color 0.5s ease;
+}
+/* Button hover effect */
+.button:hover {
+  background-color: rgb(95, 45, 110);
+}
+
+/* Button animation */
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animated login button */
+.login-button {
+  animation: buttonAnimation 4s infinite;
+}
+
+/* Animated signup button */
+.signup-button {
+  animation: buttonAnimation 4s infinite alternate;
+}
+
+
+  /* for footer */
+  footer {
+    font-size: larger;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(202, 128, 128);
+    margin-top: 80px;
+    padding-top: 60px 10%;
+    color: rgb(15, 10, 10);
+    text-align: center;
+  }
+  
+  .social-links a
+   {
+    align-self: center;
+    padding-left: 5px;
+    display: inline-block;
+    margin: 10px 10px;
+    color: rgb(32, 66, 28);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+  border-radius: 7px;
+        background-color:  #ff0000; 
+        color: rgb(15, 3, 3);
+  }
+  .social-links a i{
+    padding-left: 3px;
+  }
+  
+  .instagram:hover {
+    margin-left: 25px;
+    color: #e4405f;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .facebook:hover {
+    margin-left: 25px;
+    color: #e4405f;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .twitter:hover {
+    color: #1da1f2;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .linkedin:hover {
+    color: #0e76a8;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .github:hover {
+    color: #333;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  p{
+    margin-top: 15px;
+    text-decoration: underline;
+    font-size: larger;
+  }
+table tr th {
+  padding-left: 60px;
+}
+
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+}
