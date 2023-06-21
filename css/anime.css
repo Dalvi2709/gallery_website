@@ -28,11 +28,11 @@
 }
 
 .slide {
-    width: 12%;
+    width: 10%;
     transition: 2s;
 } 
  .slide img{
-    padding: 20px;
+    padding: 30px;
     width: 680px;
     height: 440px;
 } 
@@ -67,13 +67,13 @@
     margin-left: 0;
 }
 #radio2:checked ~ .first {
-    margin-left: -10%;
+    margin-left: -5%;
 }
 #radio3:checked ~ .first {
-    margin-left: -20%;
+    margin-left: -10%;
 }
 #radio4:checked ~ .first {
-    margin-left: -30%;
+    margin-left: -20%;
 }
 
 /* css for auto */
